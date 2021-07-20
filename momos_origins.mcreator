@@ -1,0 +1,266 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Gnome",
+      "type": "potion",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gnome"
+    },
+    {
+      "name": "GnoceDodge",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gnoce_dodge",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GardenGnome",
+      "type": "potion",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "garden_gnome"
+    },
+    {
+      "name": "GnomeRide",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gnome_ride",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GardenGnomeAggro",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "garden_gnome_aggro",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpawnCommand",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawn_command",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Spawn",
+      "type": "command",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawn"
+    },
+    {
+      "name": "Treant",
+      "type": "potion",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "treant"
+    },
+    {
+      "name": "TreantBonemeal",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "treant_bonemeal",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TreantHeal",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "treant_heal",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rooted",
+      "type": "potion",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rooted"
+    },
+    {
+      "name": "RootedStopMovement",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "rooted_stop_movement",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "effect.treant": "Treant",
+      "item.minecraft.potion.effect.rooted": "Rooted",
+      "item.minecraft.splash_potion.effect.garden_gnome": "Splash Garden Gnome",
+      "item.minecraft.splash_potion.effect.rooted": "Splash Rooted",
+      "item.minecraft.tipped_arrow.effect.treant": "Arrow of Treant",
+      "item.minecraft.tipped_arrow.effect.garden_gnome": "Arrow of Garden Gnome",
+      "item.minecraft.tipped_arrow.effect.gnome": "Arrow of Gnome",
+      "item.minecraft.lingering_potion.effect.rooted": "Lingering Rooted",
+      "item.minecraft.potion.effect.gnome": "Gnome",
+      "item.minecraft.lingering_potion.effect.gnome": "Lingering Gnome",
+      "item.minecraft.potion.effect.treant": "Treant",
+      "item.minecraft.splash_potion.effect.gnome": "Splash Gnome",
+      "effect.rooted": "Rooted",
+      "item.minecraft.splash_potion.effect.treant": "Splash Treant",
+      "item.minecraft.potion.effect.garden_gnome": "Garden Gnome",
+      "effect.garden_gnome": "Garden Gnome",
+      "item.minecraft.tipped_arrow.effect.rooted": "Arrow of Rooted",
+      "effect.gnome": "Gnome",
+      "item.minecraft.lingering_potion.effect.garden_gnome": "Lingering Garden Gnome",
+      "item.minecraft.lingering_potion.effect.treant": "Lingering Treant"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "momos_origins",
+    "modName": "Momo\u0027s Origins",
+    "version": "1.0.0",
+    "author": "gamer, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.momosorigins",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100226215
+}

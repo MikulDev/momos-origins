@@ -1,0 +1,7 @@
+{
+  "_fv": 21,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"java_code\"><field name=\"CODE\">private static final UUID ROOTED_ID = UUID.fromString(\"cd5b5ae9-b2f3-4143-92e5-59413fd850ff\");</field><next><block type=\"java_code\"><field name=\"CODE\">ModifiableAttributeInstance modifiableattributeinstance = this.getAttribute(Attributes.MOVEMENT_SPEED);</field><next><block type=\"java_code\"><field name=\"CODE\">modifiableattributeinstance.applyNonPersistentModifier(new AttributeModifier(SOUL_SPEED_BOOT_ID, \"Soul speed boost\", 0.0f, AttributeModifier.Operation.MULTIPLY_TOTAL));</field><next><block type=\"entity_set_movement\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value><value name=\"vx\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value><value name=\"vy\"><block type=\"entity_vel_y\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value><value name=\"vz\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value></block></next></block></next></block></next></block></next></block></xml>"
+  }
+}

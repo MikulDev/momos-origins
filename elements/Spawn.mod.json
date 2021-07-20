@@ -1,0 +1,11 @@
+{
+  "_fv": 21,
+  "_type": "command",
+  "definition": {
+    "commandName": "spawn",
+    "permissionLevel": "2",
+    "onCommandExecuted": {
+      "name": "SpawnCommand"
+    }
+  }
+}
