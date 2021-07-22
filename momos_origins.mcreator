@@ -212,6 +212,40 @@
           }
         ]
       }
+    },
+    {
+      "name": "Orc",
+      "type": "potion",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orc"
+    },
+    {
+      "name": "OrcKill",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orc_kill",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -220,22 +254,27 @@
     "en_us": {
       "effect.treant": "Treant",
       "item.minecraft.potion.effect.rooted": "Rooted",
-      "item.minecraft.splash_potion.effect.garden_gnome": "Splash Garden Gnome",
       "item.minecraft.splash_potion.effect.rooted": "Splash Rooted",
-      "item.minecraft.tipped_arrow.effect.treant": "Arrow of Treant",
+      "item.minecraft.splash_potion.effect.garden_gnome": "Splash Garden Gnome",
       "item.minecraft.tipped_arrow.effect.garden_gnome": "Arrow of Garden Gnome",
       "item.minecraft.tipped_arrow.effect.gnome": "Arrow of Gnome",
+      "item.minecraft.potion.effect.treant": "Treant",
+      "item.minecraft.lingering_potion.effect.orc": "Lingering Orc",
+      "item.minecraft.splash_potion.effect.gnome": "Splash Gnome",
+      "item.minecraft.splash_potion.effect.treant": "Splash Treant",
+      "item.minecraft.potion.effect.orc": "Orc",
+      "effect.gnome": "Gnome",
+      "item.minecraft.tipped_arrow.effect.orc": "Arrow of Orc",
+      "item.minecraft.tipped_arrow.effect.treant": "Arrow of Treant",
       "item.minecraft.lingering_potion.effect.rooted": "Lingering Rooted",
       "item.minecraft.potion.effect.gnome": "Gnome",
       "item.minecraft.lingering_potion.effect.gnome": "Lingering Gnome",
-      "item.minecraft.potion.effect.treant": "Treant",
-      "item.minecraft.splash_potion.effect.gnome": "Splash Gnome",
       "effect.rooted": "Rooted",
-      "item.minecraft.splash_potion.effect.treant": "Splash Treant",
-      "item.minecraft.potion.effect.garden_gnome": "Garden Gnome",
-      "effect.garden_gnome": "Garden Gnome",
+      "effect.orc": "Orc",
+      "item.minecraft.splash_potion.effect.orc": "Splash Orc",
       "item.minecraft.tipped_arrow.effect.rooted": "Arrow of Rooted",
-      "effect.gnome": "Gnome",
+      "effect.garden_gnome": "Garden Gnome",
+      "item.minecraft.potion.effect.garden_gnome": "Garden Gnome",
       "item.minecraft.lingering_potion.effect.garden_gnome": "Lingering Garden Gnome",
       "item.minecraft.lingering_potion.effect.treant": "Lingering Treant"
     }
