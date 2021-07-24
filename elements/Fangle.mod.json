@@ -2,9 +2,9 @@
   "_fv": 21,
   "_type": "potion",
   "definition": {
-    "name": "Garden Gnome",
-    "effectName": "Garden Gnome",
-    "icon": "totem_of_rejuvination.png",
+    "name": "Fangle",
+    "effectName": "Fangle",
+    "icon": "mossy_stone.png",
     "color": {
       "value": -1,
       "falpha": 0.0
@@ -13,10 +13,10 @@
     "isBad": false,
     "isBenefitical": false,
     "registerPotionType": false,
-    "renderStatusInInventory": true,
-    "renderStatusInHUD": true,
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
     "onStarted": {
-      "name": "GardenGnomeAggro"
+      "name": "Crocodiletendencies"
     }
   }
 }

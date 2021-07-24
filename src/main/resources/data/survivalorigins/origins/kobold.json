@@ -1,0 +1,17 @@
+{
+	"powers": 
+    [
+        "survivalorigins:kobold_pack_tactics",
+		"survivalorigins:kobold_natural_claws",
+		"survivalorigins:kobold_natural_leather_armor",
+		"survivalorigins:kobold_small_stature",
+		"survivalorigins:kobold_ravenous",
+		"survivalorigins:kobold_insulating_fur",
+		"survivalorigins:kobold_projectmmo"
+	],
+	"icon": "cold_sweat:filled_waterskin",
+	"order": 10,
+	"impact": 2,
+	"name": "Kobold",
+	"description": "Kobolds are pack-based creatures that are hearty in most natural conditions."
+}

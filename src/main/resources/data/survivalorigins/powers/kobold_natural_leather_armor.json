@@ -1,0 +1,61 @@
+{
+    "type": "origins:conditioned_attribute",
+    "modifier":
+    {
+        "attribute": "minecraft:generic.armor",
+        "operation": "addition",
+        "value": 7,
+        "name": "Natural Armor"
+    },
+    "tick_rate": 20,
+
+    "condition":
+    {
+        "type": "origins:and",
+        "conditions":
+        [
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "chest",
+                "item_condition":
+                {
+                    "type": "origins:armor_value",
+                    "comparison": "<=",
+                    "compare_to": 5
+                }
+            },
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "head",
+                "item_condition":
+                {
+                    "type": "origins:armor_value",
+                    "comparison": "<=",
+                    "compare_to": 2
+                }
+            },
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "legs",
+                "item_condition":
+                {
+                    "type": "origins:armor_value",
+                    "comparison": "<=",
+                    "compare_to": 4
+                }
+            },
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "feet",
+                "item_condition":
+                {
+                    "type": "origins:armor_value",
+                    "comparison": "<=",
+                    "compare_to": 1
+                }
+            }
+        ]    
+    },
+    "name": "Natural Leather Armor",
+    "description": "When you are not wearing armor or are wearing any piece of armor under Leather you gain additional armor."
+}

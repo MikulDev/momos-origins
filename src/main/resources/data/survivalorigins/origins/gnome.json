@@ -1,0 +1,17 @@
+{
+	"powers": 
+    [
+        "survivalorigins:gnome_lucky",
+		"survivalorigins:gnome_tiny",
+		"survivalorigins:gnome_feeble_body",
+		"survivalorigins:gnome_light_weight",
+		"survivalorigins:gnome_dodge",
+		"survivalorigins:gnome_garden_gnome",
+		"survivalorigins:gnome_projectmmo"
+	],
+	"icon": "minecraft:gold_nugget",
+	"order": 10,
+	"impact": 2,
+	"name": "Gnome",
+	"description": "Gnomes are lucky creatures that thrive off of chance."
+}

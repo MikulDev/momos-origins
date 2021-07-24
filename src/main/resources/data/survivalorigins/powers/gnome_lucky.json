@@ -1,0 +1,18 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": 
+    {
+        "type": "origins:apply_effect",
+        "effect": 
+        {
+            "effect": "minecraft:luck",
+            "duration": 40,
+            "amplifier": 4,
+            "show_particles": false,
+            "show_icon": false
+        }
+    },
+    "interval": 20,
+    "name": "Gnome's Luck",
+    "description": "Gnomes are known for being lucky in most scenarios, allowing for them to escape otherwise deadly situations or get artifacts."
+}

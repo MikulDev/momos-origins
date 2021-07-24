@@ -1,0 +1,19 @@
+{
+    "type": "origins:night_vision",
+    "strength": 1,
+    "condition": 
+    {
+        "type": "origins:and",
+        "conditions":
+        [
+            {
+                "type": "origins:power_active",
+                "power": "survivalorigins:elf_night_vision_key"
+            },
+            {
+                "type": "origins:exposed_to_sky",
+                "inverted": false
+            }
+        ]
+    }
+}

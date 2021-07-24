@@ -1,0 +1,28 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": 
+    {
+        "type": "origins:exhaust",
+        "amount": 0.1
+    },
+    "interval": 20,
+    "condition": 
+    {
+        "type": "origins:or",
+        "conditions": 
+        [
+            {
+                "type": "origins:submerged_in",
+                    "fluid": "minecraft:water"
+            },
+            {    
+                "type": "origins:submerged_in",
+                    "fluid": "minecraft:lava"
+            }
+        ]
+    },
+    "name": "Tired Swimmer",
+    "description": "Fangle require more hunger to swim."
+}
+
+

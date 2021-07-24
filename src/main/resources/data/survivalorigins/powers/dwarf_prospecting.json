@@ -1,0 +1,91 @@
+{
+    "type": "origins:action_on_block_break",
+    "entity_action":
+    {
+        "type": "origins:choice",
+        "actions":
+        [
+            {
+                "element":
+                {
+                    "type": "origins:give",
+                    "stack":
+                    {
+                        "item": "minecraft:coal",
+                        "amount": 1
+                    }
+                },
+                "weight": 10
+            },
+            {
+                "element":
+                    {
+                        "type": "origins:give",
+                        "stack":
+                        {
+                            "item": "minecraft:iron_ingot",
+                            "amount": 1
+                        }
+                    },
+                    "weight": 5
+            },
+            {
+                "element":
+                {
+                    "type": "origins:give",
+                    "stack":
+                    {
+                        "item": "minecraft:gold_ingot",
+                        "amount": 1
+                    }                   
+                },
+                "weight": 2.5
+            },
+            {
+                "element":
+                {
+                    "type": "origins:give",
+                    "stack":
+                    {
+                        "item": "minecraft:diamond",
+                        "amount": 1
+                    }
+                },
+                "weight": 1.25
+            },
+            {
+                "element":
+                {
+                    "type": "origins:give",
+                    "stack":
+                    {
+                        "item": "minecraft:emerald",
+                        "amount": 1
+                    }
+                },
+                "weight": 0.625
+            },
+            {
+                "element":
+                {
+                    "type": "origins:give",
+                    "stack":
+                    {
+                        "item": "minecraft:air",
+                        "amount": 1
+                    }
+                },
+                "weight": 350
+            }
+        ]
+    },
+    "block_condition":
+    {
+        "type": "origins:in_tag",
+        "tag": "base_stone_overworld"
+    },
+    "only_when_harvested": true,
+    "name": "Prospecting",
+    "description": "When mining you have a minor chance of prospecting valuable ores."
+
+}

@@ -1,0 +1,95 @@
+{
+    "type": "origins:active_self",
+    "entity_action": 
+    {
+        "type": "origins:and",
+        "actions": 
+        [
+            {
+                "type": "origins:apply_effect",
+                "effect": 
+                {
+                    "effect": "minecraft:slowness",
+                    "amplifier": 6,
+                    "duration": 600,
+                    "show_particles": false,
+                    "show_icon": false
+                }
+            },
+            {    
+                "type": "origins:apply_effect",
+                "effect": 
+                {
+                    "effect": "minecraft:mining_fatigue",
+                    "amplifier": 4,
+                    "duration": 600,
+                    "show_particles": false,
+                    "show_icon": false
+                }
+            },
+            {    
+                "type": "origins:apply_effect",
+                "effect": 
+                {
+                    "effect": "minecraft:weakness",
+                    "amplifier": 4,
+                    "duration": 600,
+                    "show_particles": false,
+                    "show_icon": false
+                }
+            },
+            {    
+                "type": "origins:apply_effect",
+                "effect": 
+                {
+                    "effect": "minecraft:mining_fatigue",
+                    "amplifier": 4,
+                    "duration": 600,
+                    "show_particles": false,
+                    "show_icon": false
+                }
+            },
+            {    
+                "type": "origins:apply_effect",
+                "effect": 
+                {
+                    "effect": "minecraft:jump_boost",
+                    "amplifier": 181,
+                    "duration": 600,
+                    "show_particles": false,
+                    "show_icon": false
+                }
+            },
+            {
+                "type": "origins:apply_effect",
+                "effect": 
+                {
+                    "effect": "momos_origins:garden_gnome",
+                    "amplifier": 0,
+                    "duration": 600,
+                    "show_particles": false,
+                    "show_icon": false
+                }
+            },
+            {
+                "type": "origins:apply_effect",
+                "effect": 
+                {
+                    "effect": "momos_origins:rooted",
+                    "amplifier": 0,
+                    "duration": 600,
+                    "show_particles": false,
+                    "show_icon": false
+                }
+            }
+        ]
+    },
+    "cooldown": 3000,
+    "hud_render": 
+    {
+        "should_render": true,
+        "bar_index": 4
+    },
+    "name": "Garden Gnome",
+    "description": "When you press the primary button you are rendered immobile for 30 seconds with an increased chance to avoid all damage."
+}

@@ -1,0 +1,21 @@
+{
+    "type": "origins:night_vision",
+    "strength": 1,
+    "condition": 
+    {
+        "type": "origins:and",
+        "conditions":
+        [
+            {
+                "type": "origins:power_active",
+                "power": "survivalorigins:dwarf_nightvision_key"
+            },
+            {
+                "type": "origins:exposed_to_sky",
+                "inverted": true
+            }
+        ]
+    },
+    "name": "Spelunker",
+    "description": "When you're underground you gain the ability to see in the dark. This ability is toggled by the secondary ability key."
+}

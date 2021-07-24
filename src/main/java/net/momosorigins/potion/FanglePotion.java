@@ -1,7 +1,7 @@
 
 package net.momosorigins.potion;
 
-import net.momosorigins.procedures.GardenGnomeAggroProcedure;
+import net.momosorigins.procedures.CrocodiletendenciesProcedure;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.fml.common.Mod;
@@ -20,8 +20,8 @@ import java.util.Map;
 import java.util.HashMap;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class GardenGnomePotion {
-	@ObjectHolder("momos_origins:garden_gnome")
+public class FanglePotion {
+	@ObjectHolder("momos_origins:fangle")
 	public static final Effect potion = null;
 	@SubscribeEvent
 	public static void registerEffect(RegistryEvent.Register<Effect> event) {
@@ -31,13 +31,13 @@ public class GardenGnomePotion {
 		private final ResourceLocation potionIcon;
 		public EffectCustom() {
 			super(EffectType.NEUTRAL, -1);
-			setRegistryName("garden_gnome");
-			potionIcon = new ResourceLocation("momos_origins:textures/totem_of_rejuvination.png");
+			setRegistryName("fangle");
+			potionIcon = new ResourceLocation("momos_origins:textures/mossy_stone.png");
 		}
 
 		@Override
 		public String getName() {
-			return "effect.garden_gnome";
+			return "effect.fangle";
 		}
 
 		@Override
@@ -52,17 +52,17 @@ public class GardenGnomePotion {
 
 		@Override
 		public boolean shouldRenderInvText(EffectInstance effect) {
-			return true;
+			return false;
 		}
 
 		@Override
 		public boolean shouldRender(EffectInstance effect) {
-			return true;
+			return false;
 		}
 
 		@Override
 		public boolean shouldRenderHUD(EffectInstance effect) {
-			return true;
+			return false;
 		}
 
 		@Override
@@ -74,11 +74,8 @@ public class GardenGnomePotion {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				GardenGnomeAggroProcedure.executeProcedure($_dependencies);
+				CrocodiletendenciesProcedure.executeProcedure($_dependencies);
 			}
 		}
 

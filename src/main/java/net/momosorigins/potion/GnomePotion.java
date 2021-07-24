@@ -44,17 +44,17 @@ public class GnomePotion {
 
 		@Override
 		public boolean shouldRenderInvText(EffectInstance effect) {
-			return false;
+			return true;
 		}
 
 		@Override
 		public boolean shouldRender(EffectInstance effect) {
-			return false;
+			return true;
 		}
 
 		@Override
 		public boolean shouldRenderHUD(EffectInstance effect) {
-			return false;
+			return true;
 		}
 
 		@Override

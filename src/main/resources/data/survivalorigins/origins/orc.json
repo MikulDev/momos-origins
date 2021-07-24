@@ -1,0 +1,18 @@
+{
+	"powers": 
+    [
+        "survivalorigins:orc_rage",
+		"survivalorigins:orc_giant",
+		"survivalorigins:orc_thick_skin",
+		"survivalorigins:orc_thick_skin_health",
+		"survivalorigins:orc_thick_skin_no_knockback",
+		"survivalorigins:orc_brutish_hunger",
+		"survivalorigins:orc_hunger",
+		"survivalorigins:orc_projectmmo"
+	],
+	"icon": "minecraft:iron_axe",
+	"order": 10,
+	"impact": 2,
+	"name": "Orc",
+	"description": "Orcs are a violent race, priding themselves based on their combat effectiveness. They indulge in bloodlust, and kill others for fun."
+}

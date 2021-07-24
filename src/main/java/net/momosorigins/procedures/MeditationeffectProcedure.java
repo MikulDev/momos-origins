@@ -24,7 +24,7 @@ public class MeditationeffectProcedure {
 		}
 		if (((entity.getPersistentData().getDouble("timer")) >= 40)) {
 			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.REGENERATION, (int) 2, (int) 1, (false), (false)));
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.REGENERATION, (int) 20, (int) 1, (false), (false)));
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SLOWNESS, (int) 2, (int) 3, (false), (false)));
 		}

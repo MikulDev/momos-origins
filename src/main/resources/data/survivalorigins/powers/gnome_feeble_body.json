@@ -1,0 +1,12 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "Max health decrease",
+        "attribute": "minecraft:generic.max_health",
+        "value": -10,
+        "operation": "addition"
+    },
+    "name": "Feeble Body",
+    "description": "Because of your feeble body you have decreased health.",
+    "hidden": true
+}

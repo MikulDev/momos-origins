@@ -1,0 +1,16 @@
+{
+	"powers": 
+    [
+        "survivalorigins:treant_giant",
+        "survivalorigins:treant_bark_skin_color",
+        "survivalorigins:treant_photosynthesis",
+        "survivalorigins:treant_transfusion",
+		"survivalorigins:treant_no_stomach",
+		"survivalorigins:treant_projectmmo"
+	],
+	"icon": "minecraft:oak_sapling",
+	"order": 10,
+	"impact": 2,
+	"name": "Treant",
+	"description": "Treants are a race of living trees, intensely connected to nature."
+}

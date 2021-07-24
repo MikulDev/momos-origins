@@ -1,0 +1,17 @@
+{
+	"powers": 
+    [
+         "survivalorigins:dwarf_night_vision",
+		 "survivalorigins:dwarf_nightvision_key",
+		 "survivalorigins:dwarf_prospecting",
+		 "survivalorigins:dwarf_dwarven_haste",
+		 "survivalorigins:dwarf_hunger",
+		 "survivalorigins:dwarf_stout",
+		 "survivalorigins:dwarf_projectmmo"
+	],
+	"icon": "minecraft:iron_pickaxe",
+	"order": 10,
+	"impact": 2,
+	"name": "Dwarf",
+	"description": "Dwarvenkind lurk in the depths of a mine or bask in the heat of a forge."
+}

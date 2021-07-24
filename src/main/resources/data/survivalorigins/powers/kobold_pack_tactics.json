@@ -1,0 +1,29 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action":
+    {
+        "type": "origins:and",
+        "actions":
+        [
+            {
+                "type": "origins:execute_command",
+                "command": "/execute if entity @e[distance=1..10,type=player] run effect give @s minecraft:strength 5 1 true"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/effect @e[distance=1..10,type=player] minecraft:strength 5 0 true"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/execute if entity @e[distance=1..10,type=wolf] run effect give @s minecraft:strength 5 1 true"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/effect @e[distance=1..10,type=wolf] minecraft:strength 5 0 true"
+            }
+        ]
+    },
+    "interval": 20,
+    "name": "Pack Tactics",
+    "description": "When nearby other players or wolves you gain a pack advantage, giving yourself Strength II and others in the pack Strength I"
+}

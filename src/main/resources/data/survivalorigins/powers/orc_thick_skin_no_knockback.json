@@ -1,0 +1,10 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "Max health increase",
+        "attribute": "minecraft:generic.knockback_resistance",
+        "value": 0.25,
+        "operation": "addition"
+    },
+    "hidden": true
+}

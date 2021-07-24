@@ -10,14 +10,16 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Direction;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.BoneMealItem;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
+import net.minecraft.block.Blocks;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -79,29 +81,38 @@ public class TreantBonemealProcedure {
 		double sx = 0;
 		double sy = 0;
 		double sz = 0;
-		if ((entity.ticksExisted % 15 == 0 && ((entity instanceof PlayerEntity) && (new Object() {
-			boolean check(Entity _entity) {
-				if (_entity instanceof LivingEntity) {
-					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
-					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == TreantPotion.potion)
-							return true;
+		double rx = 0;
+		double ry = 0;
+		double rz = 0;
+		if (entity.ticksExisted % 15 == 0) {
+			if ((new Object() {
+				boolean check(Entity _entity) {
+					if (_entity instanceof LivingEntity) {
+						Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+						for (EffectInstance effect : effects) {
+							if (effect.getPotion() == TreantPotion.potion)
+								return true;
+						}
 					}
+					return false;
 				}
-				return false;
-			}
-		}.check(entity))))) {
-			if (world instanceof World) {
-				if (BoneMealItem.applyBonemeal(new ItemStack(Items.BONE_MEAL), (World) world,
-						new BlockPos((int) (x + ((Math.random() * 10) - 5)), (int) (y + ((Math.random() * 10) - 5)),
-								(int) (z + ((Math.random() * 10) - 5))))
-						|| BoneMealItem.growSeagrass(new ItemStack(Items.BONE_MEAL), (World) world,
-								new BlockPos((int) (x + ((Math.random() * 10) - 5)), (int) (y + ((Math.random() * 10) - 5)),
-										(int) (z + ((Math.random() * 10) - 5))),
-								(Direction) null)) {
-					if (!world.isRemote())
-						((World) world).playEvent(2005, new BlockPos((int) (x + ((Math.random() * 10) - 5)), (int) (y + ((Math.random() * 10) - 5)),
-								(int) (z + ((Math.random() * 10) - 5))), 0);
+			}.check(entity))) {
+				rx = (double) ((Math.random() * 10) - 5);
+				ry = (double) ((Math.random() * 6) - 3);
+				rz = (double) ((Math.random() * 10) - 5);
+				if ((((world.getBlockState(new BlockPos((int) (x + rx), (int) ((y + ry) - 1), (int) (z + ry)))).getBlock() == Blocks.FARMLAND
+						.getDefaultState().getBlock())
+						|| (BlockTags.getCollection().getTagByID(new ResourceLocation(("minecraft:saplings").toLowerCase(java.util.Locale.ENGLISH)))
+								.contains((world.getBlockState(new BlockPos((int) (x + rx), (int) (y + ry), (int) (z + ry)))).getBlock())))) {
+					if (world instanceof World) {
+						if (BoneMealItem.applyBonemeal(new ItemStack(Items.BONE_MEAL), (World) world,
+								new BlockPos((int) (x + rx), (int) (y + ry), (int) (z + ry)))
+								|| BoneMealItem.growSeagrass(new ItemStack(Items.BONE_MEAL), (World) world,
+										new BlockPos((int) (x + rx), (int) (y + ry), (int) (z + ry)), (Direction) null)) {
+							if (!world.isRemote())
+								((World) world).playEvent(2005, new BlockPos((int) (x + rx), (int) (y + ry), (int) (z + ry)), 0);
+						}
+					}
 				}
 			}
 		}

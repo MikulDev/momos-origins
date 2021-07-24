@@ -1,0 +1,28 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": 
+    {
+        "type": "origins:apply_effect",
+        "effect": 
+        {
+            "effect": "cold_sweat:tolerance",
+            "duration": 400,
+            "amplifier": 0,
+            "show_particles": false,
+            "show_icon": false
+        }
+    },
+    "condition":
+    {
+        "type": "origins:biome",
+        "condition":
+        {
+            "type": "origins:temperature",
+            "comparison": ">",
+            "compare_to": 1.5
+        }
+    },
+    "interval": 20,
+    "name": "Cold Blooded",
+    "description": "You are cold blooded, allowing for you to deal with higher temperatures easier. When you are in temperate or cold areas, you gain Slowness II"
+}

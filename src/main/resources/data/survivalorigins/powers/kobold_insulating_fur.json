@@ -1,0 +1,18 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": 
+    {
+        "type": "origins:apply_effect",
+        "effect": 
+        {
+            "effect": "cold_sweat:ice_resistance",
+            "duration": 40,
+            "amplifier": 0,
+            "show_particles": false,
+            "show_icon": false
+        }
+    },
+    "interval": 20,
+    "name": "Insulating Fur",
+    "description": "Your fur allows you to bear extreme cold temperatures."
+}

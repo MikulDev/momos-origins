@@ -1,0 +1,21 @@
+{
+    "type": "origins:target_action_on_hit",
+    "entity_action": 
+    {
+        "type": "origins:apply_effect",
+        "effect": 
+        {
+            "effect": "minecraft:poison",
+            "amplifier": 0,
+            "duration": 100
+        }
+    },
+    "cooldown": 100,
+    "hud_render": 
+    {
+        "should_render": true,
+        "bar_index": 8
+    },
+    "name": "Poison-Touched",
+    "description": "Grung are known for their slimy skin which, on contact applies a poison effect."
+}

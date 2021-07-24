@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "origins": 
+  [
+    "survivalorigins:frog_man",
+    "survivalorigins:elf",
+    "survivalorigins:dwarf",
+    "survivalorigins:kobold",
+    "survivalorigins:gnome",
+    "survivalorigins:treant",
+    "survivalorigins:orc",
+    "survivalorigins:fangle"
+  ]
+}
