@@ -10,7 +10,6 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.item.Items;
@@ -92,9 +91,6 @@ public class TreantBonemealProcedure {
 				return false;
 			}
 		}.check(entity))))) {
-			if (entity instanceof LivingEntity) {
-				((LivingEntity) entity).swing(Hand.OFF_HAND, true);
-			}
 			if (world instanceof World) {
 				if (BoneMealItem.applyBonemeal(new ItemStack(Items.BONE_MEAL), (World) world,
 						new BlockPos((int) (x + ((Math.random() * 10) - 5)), (int) (y + ((Math.random() * 10) - 5)),
