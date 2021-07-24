@@ -1,7 +1,7 @@
 
 package net.momosorigins.potion;
 
-import net.momosorigins.procedures.RootedStopMovementProcedure;
+import net.momosorigins.procedures.MeditationeffectProcedure;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.fml.common.Mod;
@@ -19,8 +19,8 @@ import java.util.Map;
 import java.util.HashMap;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class RootedPotion {
-	@ObjectHolder("momos_origins:rooted")
+public class MeditationPotion {
+	@ObjectHolder("momos_origins:meditation")
 	public static final Effect potion = null;
 	@SubscribeEvent
 	public static void registerEffect(RegistryEvent.Register<Effect> event) {
@@ -30,13 +30,13 @@ public class RootedPotion {
 		private final ResourceLocation potionIcon;
 		public EffectCustom() {
 			super(EffectType.NEUTRAL, -1);
-			setRegistryName("rooted");
-			potionIcon = new ResourceLocation("momos_origins:textures/mossy_stone.png");
+			setRegistryName("meditation");
+			potionIcon = new ResourceLocation("momos_origins:textures/bamboo_large_leaves.png");
 		}
 
 		@Override
 		public String getName() {
-			return "effect.rooted";
+			return "effect.meditation";
 		}
 
 		@Override
@@ -73,11 +73,7 @@ public class RootedPotion {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				RootedStopMovementProcedure.executeProcedure($_dependencies);
+				MeditationeffectProcedure.executeProcedure($_dependencies);
 			}
 		}
 
