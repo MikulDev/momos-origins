@@ -24,7 +24,7 @@ public class ChameleonProcedure {
 		}
 		if (((entity.getPersistentData().getDouble("timer")) >= 40)) {
 			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.INVISIBILITY, (int) 2, (int) 0));
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.INVISIBILITY, (int) 2, (int) 0, (false), (false)));
 		}
 	}
 }

@@ -1,9 +1,10 @@
 package net.momosorigins.procedures;
 
+import net.momosorigins.potion.GnomePotion;
 import net.momosorigins.MomosOriginsMod;
 
 import net.minecraft.world.IWorld;
-import net.minecraft.potion.Effects;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.entity.LivingEntity;
@@ -43,7 +44,9 @@ public class RootedStopMovementProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((entity.isSneaking())) {
+		if (((entity.isSneaking()) && ((world
+				.getBlockState(new BlockPos((int) (entity.getPosX()), (int) ((entity.getPosY()) - (entity.getHeight())), (int) (entity.getPosZ()))))
+						.getMaterial() == net.minecraft.block.material.Material.EARTH))) {
 			entity.getPersistentData().putDouble("timer", ((entity.getPersistentData().getDouble("timer")) + 1));
 		} else {
 			entity.getPersistentData().putDouble("timer", 0);
@@ -52,7 +55,7 @@ public class RootedStopMovementProcedure {
 			world.addParticle(ParticleTypes.TOTEM_OF_UNDYING, (x + ((Math.random() * 2) - 1)), y, (z + ((Math.random() * 2) - 1)), 0, 1, 0);
 			if (world.getWorldInfo().getDayTime() % 20 == 0) {
 				if (entity instanceof LivingEntity)
-					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SATURATION, (int) 1, (int) 0));
+					((LivingEntity) entity).addPotionEffect(new EffectInstance(GnomePotion.potion, (int) 1, (int) 0));
 			}
 		}
 	}
