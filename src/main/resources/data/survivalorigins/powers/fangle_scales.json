@@ -1,0 +1,13 @@
+{
+    "type": "origins:conditioned_attribute",
+    "modifier":
+    {
+        "attribute": "minecraft:generic.armor",
+        "operation": "addition",
+        "value": 7,
+        "name": "Natural Armor"
+    },
+    "tick_rate": 20,
+    "name": "Scales",
+    "description": "Your hard scales give you extra armor."
+}

@@ -1,0 +1,19 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": 
+    {
+        "type": "origins:apply_effect",
+                "effect": 
+                {
+                    "effect": "momos_origins:meditation",
+                    "amplifier": 6,
+                    "duration": 20,
+                    "show_particles": false,
+                    "show_icon": false
+                }
+    },
+    "interval": 20,
+    "hidden": false,
+    "name": "Meditation",
+    "description": "When you hold shift for more than three seconds, you gain Regeneration II for as long as you're sneaking."
+}

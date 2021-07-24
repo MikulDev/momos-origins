@@ -1,0 +1,17 @@
+{
+    "type": "origins:attacker_action_when_hit",
+    "entity_action": 
+    {
+        "type": "origins:damage",
+        "amount": 2,
+        "source": 
+        {
+        "name": "poisoned",
+        "fire": false,
+        "bypasses_armor": false
+        }
+    },
+    "cooldown": 20,
+    "name": "Poison Skin",
+    "description": "As a Frogman your skin is poisonous"
+}

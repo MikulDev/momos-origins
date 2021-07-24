@@ -1,0 +1,18 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": 
+  {
+    "type": "origins:apply_effect",
+    "effect": 
+    {
+      "effect": "momos_origins:gnome",
+      "duration": 40,
+      "amplifier": 0,
+      "show_particles": false,
+      "show_icon": false
+    }
+  },
+  "interval": 20,
+  "name": "Gnome Dodge",
+  "description": "As a lucky Gnome, you have the chance of dodging any attack and a higher chance of dodging an attack that threatens your life."
+}

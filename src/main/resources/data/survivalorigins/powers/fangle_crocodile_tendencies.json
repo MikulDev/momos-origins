@@ -1,0 +1,17 @@
+{
+    "type": "origins:active_self",
+    "entity_action":
+    {
+        "type": "origins:execute_command",
+        "command": "function momosorigins:crocodile_tendencies",
+        "permission_level": 4
+    },
+    "cooldown": 4200,
+    "hud_render":
+    {
+        "should_render": true,
+        "bar_index": 8
+    },
+    "name": "Crocodile Tendencies",
+    "description": "With your Crocodile ancenstry you have the ability to use your main ability key and gain Speed III and Strength III for 30 seconds then gaining Slowness III for a minute. This mimics the Crocodile's tendency to slowly approach prey and strike fast and hard."
+}

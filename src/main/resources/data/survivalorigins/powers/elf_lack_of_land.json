@@ -1,0 +1,61 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": 
+  {
+      "type": "origins:apply_effect",
+      "effect": 
+      {
+          "effect": "minecraft:slowness",
+          "duration": 40,
+          "amplifier": 0,
+          "show_particles": false,
+          "show_icon": false
+      }
+  },
+  "interval": 20,
+  "condition": 
+  {
+    "type": "origins:and",
+    "conditions": 
+    [
+      {
+        "type": "origins:on_block",
+        "block_condition": 
+        {
+          "type": "origins:block",
+          "block": "minecraft:grass_block",
+          "inverted": true
+        }
+      },
+      {
+        "type": "origins:on_block",
+        "block_condition": 
+        {
+          "type": "origins:block",
+          "block": "minecraft:sand",
+          "inverted": true
+        }
+      },
+      {
+        "type": "origins:on_block",
+        "block_condition": 
+        {
+          "type": "origins:block",
+          "block": "minecraft:dirt",
+          "inverted": true
+        }
+      },
+      {
+        "type": "origins:on_block",
+        "block_condition": 
+        {
+          "type": "origins:block",
+          "block": "minecraft:podzol",
+          "inverted": true
+        }
+      }
+    ]
+  },
+  "name": "Lack of Land",
+  "description": "When you are not exposed to the sky you become sluggish."
+}

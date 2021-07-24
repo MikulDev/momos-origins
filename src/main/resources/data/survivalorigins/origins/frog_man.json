@@ -1,0 +1,18 @@
+{
+	"powers": [
+		"survivalorigins:frog_poison",
+		"survivalorigins:frog_amphibious",
+		"survivalorigins:frog_poison_skin",
+		"survivalorigins:frog_sticky",
+		"survivalorigins:frog_projectmmo",
+		"origins:water_vision",
+		"origins:aqua_affinity",
+		"origins:swim_speed",
+		"origins:like_water"
+	],
+	"icon": "minecraft:lily_pad",
+	"order": 10,
+	"impact": 2,
+	"name": "Grung",
+	"description": "Grung are a race of beings tied to both water and land and they have a higher affinity with water."
+}

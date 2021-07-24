@@ -1,0 +1,31 @@
+{
+	"type": "origins:active_self",	
+    "key": {
+        "key": "key.origins.secondary_active"
+    },
+	"entity_action": 
+	{
+		"type": "origins:apply_effect",
+		
+		"effect": 
+		{
+			"effect": "minecraft:water_breathing",
+			"show_particles": false,
+			"duration": 6000,
+			"amplifier": 0
+		}		
+	},
+	"condition": 
+	{
+		"type": "origins:submerged_in",
+		"fluid": "minecraft:water"
+	},
+	"cooldown": 8400,
+	"hud_render": 
+	{
+		"should_render": true,
+		"bar_index": 1
+	},
+	"name": "Hold Breath",
+	"description": "Press secondary while underwater to hold your breath for 5 minutes."
+}

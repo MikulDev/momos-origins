@@ -1,0 +1,1 @@
+effect give @p invisibility 10 3 true

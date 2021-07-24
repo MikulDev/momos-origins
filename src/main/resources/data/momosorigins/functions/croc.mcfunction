@@ -1,0 +1,1 @@
+effect give @p slowness 60 2 true

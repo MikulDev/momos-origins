@@ -67,7 +67,7 @@ public class TreantHealProcedure {
 				}
 				return false;
 			}
-		}.check(sourceentity)) && ((entity instanceof MobEntity)
+		}.check(sourceentity)) && ((!(entity instanceof MobEntity))
 				&& (((sourceentity instanceof PlayerEntity) ? ((PlayerEntity) sourceentity).getFoodStats().getFoodLevel() : 0) > 4))))) {
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).setHealth((float) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1) + 2));

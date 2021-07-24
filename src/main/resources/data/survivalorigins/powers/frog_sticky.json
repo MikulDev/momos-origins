@@ -1,0 +1,22 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect":
+        {
+            "effect": "minecraft:slowness",
+            "duration": 200,
+            "amplifier": 1,
+            "show_particles": false,
+            "show_icon": false
+        }
+    },
+    "interval": 200,
+    "condition": {
+        "type": "origins:submerged_in",
+        "fluid": "minecraft:water",
+        "inverted": true
+    },
+    "name": "Sticky",
+    "description": "Because of the slime on your skin you're slow on land."
+}

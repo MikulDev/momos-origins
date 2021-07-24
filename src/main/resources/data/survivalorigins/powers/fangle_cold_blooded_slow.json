@@ -1,0 +1,49 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": 
+    {
+        "type": "origins:apply_effect",
+        "effect": 
+        {
+            "effect": "minecraft:slowness",
+            "duration": 40,
+            "amplifier": 0,
+            "show_particles": false,
+            "show_icon": false
+        }
+    },
+    "condition":
+    {
+        "type": "origins:and",
+        "conditions":
+        [
+            {
+                "type": "origins:biome",
+                "condition":
+                {
+                    "type": "origins:temperature",
+                    "comparison": "<",
+                    "compare_to": 1.0
+                }
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "cold_sweat:insulated",
+                "min_amplifier": 0,
+                "inverted": true
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:speed",
+                "min_amplifier": 1,
+                "inverted": true
+            }
+        ]
+    },
+    "interval": 20,
+    "name": "Cold Blooded",
+    "description": "You are cold blooded, allowing for you to deal with higher temperatures easier. When you are in temperate or cold areas, you gain Slowness II, this can be cancelled out by either Insulation or any form of Speed above II",
+    "hidden": true
+}
+
+

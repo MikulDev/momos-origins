@@ -1,0 +1,12 @@
+{
+  "type": "origins:attribute",
+  "modifier": {
+      "name": "Max knockback decrease",
+      "attribute": "minecraft:generic.knockback_resistance",
+      "value": -0.5,
+      "operation": "addition"
+  },
+  "name": "Frail Constitution",
+  "description": "Elves aren't known for their destructive capabilities, they have less knockback resistance"
+}
+    

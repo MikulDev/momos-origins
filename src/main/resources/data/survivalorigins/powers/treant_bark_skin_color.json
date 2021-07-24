@@ -1,0 +1,9 @@
+{
+    "type": "origins:model_color",
+    "red": 0.14,
+    "green": 0.3,
+    "blue": 0.020,
+    "alpha": 1.0,
+    "name": "Bark-skinned",
+    "description": "As a tree, you are colored like a tree."
+}

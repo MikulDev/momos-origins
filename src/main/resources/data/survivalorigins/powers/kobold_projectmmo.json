@@ -1,0 +1,107 @@
+{
+    "type": "origins:action_on_callback",
+    "entity_action_chosen":
+    {
+        "type": "origins:and",
+        "actions":
+        [
+            {
+                "type": "origins:execute_command",
+                "command": "/pmmo admin @s set agility level 20",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/pmmo admin @s set alchemy level 0",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/pmmo admin @s set archery level 0",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/pmmo admin @s set building level 0",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/pmmo admin @s set combat level 10",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/pmmo admin @s set cooking level 0",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/pmmo admin @s set crafting level 0",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/pmmo admin @s set endurance level 10",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/pmmo admin @s set engineering level 0",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/pmmo admin @s set excavation level 0",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/pmmo admin @s set farming level 0",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/pmmo admin @s set fishing level 5",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/pmmo admin @s set hunter level 20",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/pmmo admin @s set magic level 0",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/pmmo admin @s set mining level 0",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/pmmo admin @s set smithing level 0",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/pmmo admin @s set swimming level 0",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/pmmo admin @s set taming level 5",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/pmmo admin @s set woodcutting level 0",
+                "permission_level": 4
+            }
+        ]
+    },
+    "execute_chosen_when_orb": true,
+    "hidden": true
+}

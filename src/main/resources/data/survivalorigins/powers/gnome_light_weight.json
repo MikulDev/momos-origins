@@ -1,0 +1,16 @@
+{
+    "type": "origins:action_on_land",
+    "entity_action": 
+    {
+        "type": "origins:set_fall_distance",
+        "fall_distance": 4
+    },
+    "condition":
+    {
+        "type": "origins:fall_distance",
+        "comparison": ">=",
+        "compare_to": 4
+    },
+    "name": "Light Weight",
+    "description": "When you fall you take less damage than others."
+}

@@ -1,0 +1,18 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": 
+    {
+      "type": "origins:apply_effect",
+      "effect": 
+      {
+        "effect": "momos_origins:treant",
+        "duration": 40,
+        "amplifier": 0,
+        "show_particles": false,
+        "show_icon": false
+      }
+    },
+    "interval": 20,
+    "name": "Sap Transfusion",
+    "description": "As a Treant, you have the ability to take some of your hunger and turn it into health for any ally you right-click on. You also have random crop growth surround you."
+  }

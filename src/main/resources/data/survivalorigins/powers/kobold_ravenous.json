@@ -1,0 +1,21 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": 
+    {
+        "type": "origins:exhaust",
+        "amount": 0.5
+    },
+    "interval": 20,
+    "condition": 
+    {
+        "type": "origins:biome",
+        "condition":
+        {
+            "type": "origins:temperature",
+            "comparison": "<",
+            "compare_to": 0.4
+        }
+    },
+    "name": "Ravenous",
+    "description": "When you are in any extreme temperature you gain a ravenous hunger."
+}

@@ -1,0 +1,11 @@
+{
+    "type": "origins:exhaust",
+    "interval": 20,
+    "exhaustion": 0.1,
+    "condition": 
+    {
+        "type": "origins:exposed_to_sky"
+    },
+    "name": "Dwarven Hunger",
+    "description": "When you're out of the mine you feel hungry."
+}

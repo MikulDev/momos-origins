@@ -1,0 +1,22 @@
+{
+    "type": "origins:action_on_block_break",
+    "entity_action": 
+    {
+        "type": "origins:apply_effect",
+        "effect":
+        {
+            "effect": "minecraft:haste",
+            "duration": 40,
+            "amplifier": 1,
+            "show_particles": false,
+            "show_icon": false
+        }
+    },
+    "block_condition":
+    {
+        "type": "origins:in_tag",
+        "tag": "base_stone_overworld"
+    },
+    "name": "Dwarven Haste",
+    "description": "Dwarves have a knack for mining, when you mine any form of stone you gain Haste II"
+}

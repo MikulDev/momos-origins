@@ -1,0 +1,39 @@
+{
+        "type": "origins:action_over_time",
+        "entity_action": 
+        {
+            "type": "origins:and",
+            "actions":
+            [
+                {
+                    "type": "origins:apply_effect",
+                    "effect": 
+                    {
+                        "effect": "minecraft:speed",
+                        "duration": 40,
+                        "amplifier": 1,
+                        "show_particles": false,
+                        "show_icon": false
+                    }
+                },
+                {
+                    "type": "origins:apply_effect",
+                    "effect": 
+                    {
+                        "effect": "minecraft:night_vision",
+                        "duration": 300,
+                        "amplifier": 0,
+                        "show_particles": false,
+                        "show_icon": false
+                    }
+                }   
+            ]
+        },
+        "interval": 20,
+        "condition": 
+        {
+            "type": "origins:exposed_to_sky"
+        },
+    "name": "Elven Passage",
+    "description": "You feel more comfortable when connected to nature, when you can see the sky you gain Speed II."
+}

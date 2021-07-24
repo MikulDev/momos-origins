@@ -1,0 +1,11 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": 
+    {
+        "type": "origins:exhaust",
+        "amount": 0.1
+    },
+    "interval": 20,
+    "name": "Brutish Hunger",
+    "description": "Orcs are naturally hungry, they feast on the flesh of their enemies, giving a chance of gaining back hunger on killing of any entity."
+}

@@ -1,0 +1,13 @@
+{
+    "type": "origins:conditioned_attribute",
+    "modifier":
+    {
+        "attribute": "minecraft:generic.armor",
+        "operation": "addition",
+        "value": 7,
+        "name": "Natural Armor"
+    },
+    "tick_rate": 20,
+    "name": "Thick Skin",
+    "description": "Orcs have thick skin, giving them both higher vitality and better natural armor."
+}
